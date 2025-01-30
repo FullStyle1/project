@@ -102,7 +102,7 @@ function App() {
               <div className="grid gap-4 md:grid-cols-2">
                 <input
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Nombre(s)"
                   className="p-2 border rounded"
                   value={formData.firstName}
                   onChange={e => setFormData({...formData, firstName: e.target.value})}
@@ -110,7 +110,7 @@ function App() {
                 />
                 <input
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Primer apellido"
                   className="p-2 border rounded"
                   value={formData.lastName}
                   onChange={e => setFormData({...formData, lastName: e.target.value})}
@@ -118,7 +118,7 @@ function App() {
                 />
                 <input
                   type="text"
-                  placeholder="Paternal Last Name"
+                  placeholder="Segundo Apellido"
                   className="p-2 border rounded"
                   value={formData.paternalLastName}
                   onChange={e => setFormData({...formData, paternalLastName: e.target.value})}
@@ -134,7 +134,7 @@ function App() {
                 />
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Materia que Imparte"
                   className="p-2 border rounded md:col-span-2"
                   value={formData.subject}
                   onChange={e => setFormData({...formData, subject: e.target.value})}
