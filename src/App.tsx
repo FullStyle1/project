@@ -5,7 +5,7 @@ interface Teacher {
   id: number;
   firstName: string;
   lastName: string;
-  paternalLastName: string;
+  paternalLastName: string; 
   email: string;
   subject: string;
 }
@@ -158,7 +158,7 @@ function App() {
             </div>
             <input
               type="text"
-              placeholder="Search by paternal last name..."
+              placeholder="Buscar por apellido pateno..."
               className="w-full p-2 border rounded mb-4"
               value={searchTerm}
               onChange={handleSearch}
