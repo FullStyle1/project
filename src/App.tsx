@@ -72,6 +72,13 @@ function App() {
 
   return (
     <div>
+      <header className="/Assets text-white p-6 shadow-lg">
+      <div className="container mx-auto flex items-center gap-2">
+        <img src="Assets/Logotipo_UTCH.png" ></img>
+        <h1 className="text-2xl font-bold">UTCH</h1>
+        <h2 className="text-2xl font-bold">Sistema de Altas y Bajas de Maestros</h2>
+      </div>
+    </header>
       <main className="container mx-auto p-6">
         <div className="grid gap-6 md:grid-cols-2">
           {/* Add/Edit Teacher Form */}
