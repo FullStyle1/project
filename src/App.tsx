@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { UserPlus, Search, PencilLine, Trash2, X } from 'lucide-react';
-
+import logoImage from './Assets/Logotipo_UTCH.png';
 interface Teacher {
   id: number;
   firstName: string;
@@ -70,12 +70,12 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div>
       <header className="bg-green-600 text-white p-6 shadow-lg">
         <div className="container mx-auto flex items-center gap-2">
-          <img src="./Assets/Logotipo_UTCH.jpg" alt="Logo de la UTCH"/>
+          <img src={logoImage} alt="Logo de la UTCH" />
           <h1 className="text-2xl font-bold">UTCH</h1>
-          <h2 className="text-2x.5 font-bold">Sistema de Altas y Bajas de Maestros</h2>
+          <h2 className="text-2xl font-bold">Sistema de Altas y Bajas de Maestros</h2>
         </div>
       </header>
 
