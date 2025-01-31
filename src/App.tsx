@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { UserPlus, Search, PencilLine, Trash2, X } from 'lucide-react';
-import logoImage from 'Assets/Logotipo_UTCH.png';
+import logoImage from './Assets/Logotipo_UTCH.png';
 
 interface Teacher {
   id: number;
