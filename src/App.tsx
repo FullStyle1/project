@@ -47,7 +47,7 @@ function App() {
   };
 
   const handleDelete = (id: number) => {
-    if (window.confirm('Are you sure you want to delete this teacher?')) {
+    if (window.confirm('Seguro que quieres eliminar este profesor?')) {
       setTeachers(teachers.filter(teacher => teacher.id !== id));
       if (editingId === id) {
         setEditingId(null);
@@ -74,7 +74,8 @@ function App() {
       <header className="bg-green-600 text-white p-6 shadow-lg">
         <div className="container mx-auto flex items-center gap-2">
           <Users size={32} />
-          <h1 className="text-2xl font-bold">Teacher Management System</h1>
+          <h1 className="text-2xl font-bold">UTCH</h1>
+          <h2 className="text-2xl font-bold">Sistema de Altas y Bajas de Maestros</h2>
         </div>
       </header>
 
@@ -86,7 +87,7 @@ function App() {
               <div className="flex items-center gap-2">
                 <UserPlus className="text-green-600" />
                 <h2 className="text-xl font-semibold">
-                  {editingId ? 'Edit Teacher' : 'Add New Teacher'}
+                  {editingId ? 'Editar Información de Profesor' : 'Agregar un Profesor'}
                 </h2>
               </div>
               {editingId && (
@@ -145,7 +146,7 @@ function App() {
                 type="submit"
                 className="w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition"
               >
-                {editingId ? 'Update Teacher' : 'Add Teacher'}
+                {editingId ? 'Actualizar Profesor' : 'Agregar Profesor'}
               </button>
             </form>
           </div>
@@ -154,7 +155,7 @@ function App() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center gap-2 mb-4">
               <Search className="text-green-600" />
-              <h2 className="text-xl font-semibold">Search Teachers</h2>
+              <h2 className="text-xl font-semibold">Buscar Profesores</h2>
             </div>
             <input
               type="text"
@@ -192,7 +193,7 @@ function App() {
                 </div>
               ))}
               {filteredTeachers.length === 0 && (
-                <p className="text-center text-gray-500">No teachers found</p>
+                <p className="text-center text-gray-500">No se han encontrado profesores</p>
               )}
             </div>
           </div>
