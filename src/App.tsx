@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { UserPlus, Search, Users, PencilLine, Trash2, X } from 'lucide-react';
+import { UserPlus, Search, PencilLine, Trash2, X } from 'lucide-react';
 
 interface Teacher {
   id: number;
@@ -73,7 +73,7 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-green-600 text-white p-6 shadow-lg">
         <div className="container mx-auto flex items-center gap-2">
-          <Users size={32} />
+          <img src="Logotipo_UTCH.png" alt="Una foto de ejemplo" />
           <h1 className="text-2xl font-bold">UTCH</h1>
           <h2 className="text-2xl font-bold">Sistema de Altas y Bajas de Maestros</h2>
         </div>
